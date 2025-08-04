@@ -50,3 +50,63 @@ PORT     STATE SERVICE
 4449/tcp open  privatewire
 
 Nmap done: 256 IP addresses (6 hosts up) scanned in 50.71 seconds
+
+192.168.0.1
+Open/Filtered Ports:
+
+80/tcp (HTTP):
+Risk: If HTTPS is not enforced, unencrypted data can be intercepted. Default or misconfigured web servers can expose vulnerabilities.
+
+1900/tcp (UPnP):
+Risk: Universal Plug and Play is often exploited for internal network discovery or DDoS amplification. Should be disabled if not needed.
+
+23/tcp (Telnet) - Filtered:
+Risk: Even if filtered, the presence of Telnet suggests it may be accessible. Telnet is insecure due to lack of encryption and should be disabled.
+
+192.168.0.106
+Filtered Port:
+
+5060/tcp (SIP):
+Risk: Used for VoIP. Susceptible to spam calls, registration hijacking, or denial-of-service attacks if exposed.
+
+192.168.0.107
+Open Ports:
+
+1077/tcp (imgames):
+Risk: Unknown or custom services can introduce vulnerabilities if not properly secured.
+
+3000/tcp (ppp):
+Risk: Commonly used by development servers (e.g., Node.js). Should not be exposed in production.
+
+3001/tcp (Nessus):
+Risk: Nessus web interface can expose scanning data or configuration. Should be protected with authentication and access control.
+
+7000/tcp (afs3-fileserver):
+Risk: File services can leak data or be used for unauthorized access if not secured.
+
+9080/tcp (glrpc):
+Risk: Possibly a custom RPC service. Needs review and access restriction.
+
+11111/tcp (vce):
+Risk: Very uncommon port. Could be a proprietary service—requires evaluation and possibly firewall restriction.
+
+192.168.0.103
+Open Ports:
+
+135/tcp (MS RPC):
+Risk: Frequently exploited for lateral movement in Windows environments. Should be blocked externally.
+
+139/tcp (NetBIOS-SSN):
+Risk: Can expose file sharing and other internal services to attackers.
+
+445/tcp (Microsoft-DS / SMB):
+Risk: High risk. Commonly targeted by malware and ransomware (e.g., WannaCry). Should not be exposed to untrusted networks.
+
+4343/tcp (unicall):
+Risk: Unknown service; should be audited or disabled if not in use.
+
+4449/tcp (privatewire):
+Risk: Uncommon or custom application. Needs review.
+
+192.168.0.104 and 192.168.0.110
+No open ports. These systems appear secure from a network exposure standpoint based on this scan.
