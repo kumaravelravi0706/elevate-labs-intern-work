@@ -4,6 +4,7 @@ STEPS: (nmap)
 2. Use command prompt in your windows and type ipconfig to view your local ip address. (192.168.0.103)
 3. Copy the ip address and type "nmap -sS 192.168.0.103/24".
 4. The IP addresses and open ports are present in the task report.
+5. I've also checked the potenial secuirty risks from the open ports present inside.
 
 STEPS: (wireshark)
 
@@ -15,3 +16,4 @@ Tools used:
 
 1. nmap
 2. wireshark
+
