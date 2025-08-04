@@ -1,0 +1,52 @@
+Starting Nmap 7.97 ( https://nmap.org ) at 2025-08-04 17:20 +0530
+Nmap scan report for 192.168.0.1
+Host is up (0.0076s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE    SERVICE
+23/tcp   filtered telnet
+80/tcp   open     http
+1900/tcp open     upnp
+MAC Address: 3C:52:A1:6E:B5:F9 (TP-Link Limited)
+
+Nmap scan report for 192.168.0.104
+Host is up (0.067s latency).
+All 1000 scanned ports on 192.168.0.104 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 66:34:16:43:1A:EB (Unknown)
+
+Nmap scan report for 192.168.0.106
+Host is up (0.0088s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE    SERVICE
+5060/tcp filtered sip
+MAC Address: 42:85:8A:2B:39:6C (Unknown)
+
+Nmap scan report for 192.168.0.107
+Host is up (0.0059s latency).
+Not shown: 994 closed tcp ports (reset)
+PORT      STATE SERVICE
+1077/tcp  open  imgames
+3000/tcp  open  ppp
+3001/tcp  open  nessus
+7000/tcp  open  afs3-fileserver
+9080/tcp  open  glrpc
+11111/tcp open  vce
+MAC Address: 2C:2B:F9:6F:8F:C4 (LG Innotek)
+
+Nmap scan report for 192.168.0.110
+Host is up (0.0078s latency).
+All 1000 scanned ports on 192.168.0.110 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 7A:27:AA:6A:4F:0F (Unknown)
+
+Nmap scan report for 192.168.0.103
+Host is up (0.000014s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+4343/tcp open  unicall
+4449/tcp open  privatewire
+
+Nmap done: 256 IP addresses (6 hosts up) scanned in 50.71 seconds
